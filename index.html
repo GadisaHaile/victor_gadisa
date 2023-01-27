@@ -29,15 +29,94 @@
 
   <form action="" id="survey-form">
    
-    <label for="name">Name</label> <br>
+    <label id="name-label" for="name">Name</label> <br>
     <input type="text" name="name" id="name" placeholder="Enter your Name" required> <br>
 
-    <label for="email">Email</label> <br>
+    <label id="email-label"  for="email">Email</label> <br>
     <input type="email" name="email" id="email" placeholder="Enter your Email" pattern="[^ @]*@[^ @]*" required> <br>
 
-    <label for="number">Age (optional)</label> <br>
+    <label id="number-label" for="number">Age (optional)</label> <br>
     <input type="number" name="email" id="number" placeholder="Age" min="18" max="60"> <br>
 
+    <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label> <br>
+    <select name="dropdown" id="dropdown">
+      <option value="select current roles" selected disabled>select current roles</option>
+      <option value="Student">Student</option>
+      <option value="Full Time Job">Full Time Job</option>
+      <option value="Full Time Learner">Full Time Learner</option>
+      <option value="Prffer not to say">Prffer not to say</option>
+      <option value="Other">Other</option>
+    </select> <br>
+
+
+    <label id="radiobutton-label" for="radiobutton">Would you recommend freeCodeCamp to a friend?</label> <br>
+    <label for="radio1">
+      <input type="radio" name="name" id="radio1" value="Definitely" checked>Definitely <br>
+    </label>
+    <label for="radio2">
+      <input type="radio" name="name" id="radio2" value="Maybe" >Maybe <br>
+    </label>
+    <label for="radio3">
+      <input type="radio" name="name" id="radio3" value="Not Sure" >Not Sure <br>
+    </label>
+
+
+    <label id="dropdown-label" for="dropdown">What is your favorite feature of freeCodeCamp?</label> <br>
+    <select name="dropdown" id="dropdown">
+      <option value="Sellect An Option" selected disabled>Sellect An Option</option>
+      <option value="Challenges">Challenges</option>
+      <option value="Projects">Projects</option>
+      <option value="Community">Community</option>
+      <option value="Open Source">Open Source</option>
+    </select> <br>
+    
+
+    <label id="checkbox-label" for="checkbox">What would you like to see improved? (Check all that apply)</label> <br>
+    <label for="checkbox1">
+      <input type="checkbox" name="checkbox" id="checkbox1" value="Front-end Projects">Front-end Projects <br>
+    </label>
+    <label for="checkbox2">
+      <input type="checkbox" name="checkbox" id="checkbox2" value="Back-end Projects">Back-end Projects <br>
+    </label>
+    <label for="checkbox3">
+      <input type="checkbox" name="checkbox" id="checkbox3" value="Data Visualization">Data Visualization <br>
+    </label>
+    <label for="checkbox4">
+      <input type="checkbox" name="checkbox" id="checkbox4" value="Challenges">Challenges <br>
+    </label>
+    <label for="checkbox5">
+      <input type="checkbox" name="checkbox" id="checkbox5" value="Open Source Community">Open Source Community <br>
+    </label>
+    <label for="checkbox6">
+      <input type="checkbox" name="checkbox" id="checkbox6" value="Gitter help rooms">Gitter help rooms <br>
+    </label>
+    <label for="checkbox7">
+      <input type="checkbox" name="checkbox" id="checkbox7" value="Videos">Videos <br>
+    </label>
+    <label for="checkbox8">
+      <input type="checkbox" name="checkbox" id="checkbox8" value="City Meetups">City Meetups<br>
+    </label>
+    <label for="checkbox9">
+      <input type="checkbox" name="checkbox" id="checkbox9" value="Wiki">Wiki <br>
+    </label>
+    <label for="checkbox10">
+      <input type="checkbox" name="checkbox" id="checkbox10" value="Forum">Forum <br>
+    </label>
+    <label for="checkbox11">
+      <input type="checkbox" name="checkbox" id="checkbox11" value="Additional Courses">Additional Courses <br>
+    </label>
+    
+
+
+    
+    <label id="Textarea-label" for="Textarea">Any comments or suggestions?</label> <br>
+    <textarea name="textarea" id="" cols="30" rows="10" placeholder="Enter your comment here..."></textarea> <br>
+    
+    
+    <button id="submit">Submit</button>
+    
+    
+    
 
   </form>
 
